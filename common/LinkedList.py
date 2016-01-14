@@ -39,3 +39,12 @@ class LinkedListNode:
             listLen += 1
             head = head.next
         return listLen
+
+    @staticmethod
+    def Tail(head):
+        tail = None
+        while head:
+            tail = head
+            head = head.next
+        return tail
+
