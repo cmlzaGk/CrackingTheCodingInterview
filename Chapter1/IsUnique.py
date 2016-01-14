@@ -20,11 +20,6 @@ def isUnique2(s):
         charMap[ord(chrS)] = True
     return True
 
-def test(s):
-    print("hasUnique1 {0} = {1}".format(s, hasUnique(s)))
-    print("hasUnique2 {0} = {1}".format(s, hasUnique2(s)))
-
-
 class TestisUnique(unittest.TestCase):
     def driver(self, s, expected):
         self.assertEqual(isUnique(s), expected)
