@@ -48,3 +48,13 @@ class LinkedListNode:
             head = head.next
         return tail
 
+class LinkedList:
+    def __init__(self):
+        self.head = self.tail = None
+    def Append(self, data):
+        node = LinkedListNode(data)
+        if not self.head:
+            self.head = self.tail = node
+        else:
+            self.tail.next = node
+            self.tail = node
