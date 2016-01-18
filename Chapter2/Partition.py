@@ -57,10 +57,7 @@ class TestPartition(unittest.TestCase):
                     self.assertEqual(inLeftPartition, True)
                 else:
                     inLeftParition = False
-            result.sort()
-            expected = inArr.copy()
-            expected.sort()
-            self.assertEqual(result, expected)
+            self.assertEqual(sorted(result), sorted(inArr))
 
     def test_Partition(self):
         self.driver([3, 5, 8, 7, 10, 2, 1], 5)

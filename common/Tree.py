@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.left = self.right = None
 
+    # Walk the tree inOrder and append the elements into an array
     @staticmethod
     def InOrderArray(node, inArr):
         if not node:

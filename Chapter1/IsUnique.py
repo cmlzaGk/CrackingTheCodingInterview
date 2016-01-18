@@ -1,9 +1,7 @@
 import unittest
 
 def sortString(s):
-    temps = list(s)
-    temps.sort()
-    return "".join(temps)
+    return "".join(sorted(s))
 
 def isUnique(s):
     s = sortString(s)
